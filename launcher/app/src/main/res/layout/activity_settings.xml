@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="48dp">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="@color/text_main" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Configurações do Painel"
+            android:textColor="@color/text_main"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="URL da API Admin"
+        android:textColor="@color/text_muted"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:letterSpacing="0.1" />
+
+    <EditText
+        android:id="@+id/et_api_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_input"
+        android:fontFamily="monospace"
+        android:hint="http://seuservidor.com/admin/api.php"
+        android:inputType="textUri"
+        android:padding="16dp"
+        android:textColor="@color/text_main"
+        android:textColorHint="@color/text_muted" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="DICA: Esta URL deve apontar para o arquivo api.php no seu servidor."
+        android:textColor="@color/text_muted"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_save_url"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/primary"
+        android:paddingHorizontal="48dp"
+        android:text="Salvar e Sincronizar"
+        app:cornerRadius="12dp" />
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GB Launcher</string>
+    <string name="url_admin">URL do Painel Admin</string>
+    <string name="save">Salvar</string>
+    <string name="loading">Carregando dispositivos...</string>
+    <string name="error_conn">Erro ao carregar ecossistema</string>
+    <string name="settings">Configurações</string>
+</resources>
